@@ -77,7 +77,7 @@ train_loader = torch.utils.data.DataLoader(dataset=train_dataset, batch_size=bat
 
 num_models = 20
 for i in range(num_models):
-    network = ToyNet(model_id + "_%d" % i, project_dir="/root/ebms_regression/1dregression").cuda()
+    network = ToyNet(model_id + "_%d" % i, project_dir="/content/NCE_TRANING/1dregression").cuda()
 
     optimizer = torch.optim.Adam(network.parameters(), lr=learning_rate)
 

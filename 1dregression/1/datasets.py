@@ -94,14 +94,14 @@ class ToyDataset(torch.utils.data.Dataset):
         plt.ylabel("y")
         plt.xlabel("x")
         plt.ylim([-1.5, 1.5])
-        plt.savefig("/root/ebms_regression/1dregression/1/ground_truth.png")
+        plt.savefig("/content/NCE_TRANING/1dregression/1/ground_truth.png")
         plt.close(1)
         ########################################################################
 
-        with open("/root/ebms_regression/1dregression/1/x.pkl", "rb") as file: # (needed for python3)
+        with open("/content/NCE_TRANING/1dregression_1/x.pkl", "rb") as file: # (needed for python3)
             x = pickle.load(file)
 
-        with open("/root/ebms_regression/1dregression/1/y.pkl", "rb") as file: # (needed for python3)
+        with open("/content/NCE_TRANING/1dregression_1/y.pkl", "rb") as file: # (needed for python3)
             y = pickle.load(file)
 
         plt.figure(1)
@@ -109,7 +109,7 @@ class ToyDataset(torch.utils.data.Dataset):
         plt.ylabel("y")
         plt.xlabel("x")
         plt.ylim([-1.5, 1.5])
-        plt.savefig("/root/ebms_regression/1dregression/1/training_data.png")
+        plt.savefig("/content/NCE_TRANING/1dregression_1/training_data.png")
         plt.close(1)
 
         for i in range(x.shape[0]):
